@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 7960871852800181352}
   - component: {fileID: 7992545304540710270}
   - component: {fileID: 7194819418124651901}
-  - component: {fileID: 5685582548803100235}
+  - component: {fileID: 3425602701239007218}
   - component: {fileID: 6718057305745504330}
   m_Layer: 0
   m_Name: Ghost
@@ -594,7 +594,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &5685582548803100235
+--- !u!114 &3425602701239007218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
