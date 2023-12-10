@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float turnSpeed = 20f;
+    public float sprintSpeed;
 
     static public bool isWalking;
     
@@ -27,8 +28,13 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxis ("Horizontal");
         float vertical = Input.GetAxis ("Vertical");
 
+        if(Input.GetKey(KeyCode.LeftShift)){
+            horizontal *= sprintSpeed;
+            vertical *= sprintSpeed;
+        }
+
         m_Movement.Set(horizontal, 0f, vertical);
-        m_Movement.Normalize();
+        //m_Movement.Normalize();
 
         bool hasHorizontalInput = !Mathf.Approximately (horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately (vertical, 0f);
